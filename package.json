@@ -1,0 +1,26 @@
+{
+  "name": "simple-invoice-template",
+  "version": "1.0.0",
+  "description": "free invoice template design html css scss",
+  "main": "index.js",
+  "scripts": {
+    "require": "npm -g sass",
+    "compile-sass": "sass assets/sass/invoice.scss assets/css/invoice.css",
+    "watch": "sass --watch assets/sass/invoice.scss assets/css/invoice.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sahrullahh/invoice-kit.git"
+  },
+  "keywords": [
+    "invoice-kit",
+    "invoice-template",
+    "invoice-html-css"
+  ],
+  "author": "Mohammad Sahrullah",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sahrullahh/invoice-kit/issues"
+  },
+  "homepage": "https://github.com/sahrullahh/invoice-kit#readme"
+}

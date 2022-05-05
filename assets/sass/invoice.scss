@@ -1,0 +1,186 @@
+@import "https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap";
+
+* {
+  margin: 0 auto;
+  padding: 0 auto;
+  user-select: none;
+}
+
+// variable fonts
+$Inter: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+  Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+// variable colors
+$black: "#0F172A";
+$gray-300: "#cbd5e1";
+$gray-400: "#94a3b8";
+$gray-700: "#334155";
+
+body {
+  padding: 20px;
+  font-family: $Inter;
+  -webkit-font-smoothing: antialiased;
+  background-color: #dcdcdc;
+}
+
+.wrapper-invoice {
+  display: flex;
+  justify-content: center;
+  .invoice {
+    height: auto;
+    background: #fff;
+    padding: 5vh;
+    margin-top: 5vh;
+    max-width: 110vh;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #dcdcdc;
+    .invoice-information {
+      float: right;
+      text-align: right;
+      b {
+        color: $black;
+      }
+      p {
+        font-size: 2vh;
+        color: gray;
+      }
+    }
+    .invoice-logo-brand {
+      h2 {
+        text-transform: uppercase;
+        font-family: $Inter;
+        font-size: 2.9vh;
+        color: $black;
+      }
+      img {
+        max-width: 100px;
+        width: 100%;
+        object-fit: fill;
+      }
+    }
+    .invoice-head {
+      display: flex;
+      margin-top: 8vh;
+      .head {
+        width: 100%;
+        box-sizing: border-box;
+      }
+      .client-info {
+        text-align: left;
+        h2 {
+          font-weight: 500;
+          letter-spacing: 0.3px;
+          font-size: 2vh;
+          color: $black;
+        }
+        p {
+          font-size: 2vh;
+          color: gray;
+        }
+      }
+      .client-data {
+        text-align: right;
+        h2 {
+          font-weight: 500;
+          letter-spacing: 0.3px;
+          font-size: 2vh;
+          color: $black;
+        }
+        p {
+          font-size: 2vh;
+          color: gray;
+        }
+      }
+    }
+    .invoice-body {
+      margin-top: 8vh;
+      .table {
+        border-collapse: collapse;
+        width: 100%;
+
+        thead {
+          tr {
+            th {
+              font-size: 2vh;
+              border: 1px solid #dcdcdc;
+              text-align: left;
+              padding: 1vh;
+              background-color: #eeeeee;
+            }
+          }
+        }
+        tbody {
+          tr {
+            td {
+              font-size: 2vh;
+              border: 1px solid #dcdcdc;
+              text-align: left;
+              padding: 1vh;
+              background-color: #fff;
+              &:nth-child(2) {
+                text-align: right;
+              }
+            }
+          }
+        }
+      }
+      .flex-table {
+        display: flex;
+        .flex-column {
+          width: 100%;
+
+          box-sizing: border-box;
+          .table-subtotal {
+            border-collapse: collapse;
+            box-sizing: border-box;
+            width: 100%;
+            margin-top: 2vh;
+            tbody {
+              tr {
+                td {
+                  font-size: 2vh;
+                  border-bottom: 1px solid #dcdcdc;
+                  text-align: left;
+                  padding: 1vh;
+                  background-color: #fff;
+                  &:nth-child(2) {
+                    text-align: right;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .invoice-total-amount {
+        margin-top: 1rem;
+        p {
+          font-weight: bold;
+          color: $black;
+          text-align: right;
+          font-size: 2vh;
+        }
+      }
+    }
+    .invoice-footer {
+      margin-top: 4vh;
+
+      p {
+        font-size: 1.7vh;
+        color: gray;
+      }
+    }
+  }
+}
+.copyright {
+  margin-top: 2rem;
+  text-align: center;
+  p {
+    color: gray;
+    font-size: 1.8vh;
+  }
+}
+
+@import "print.scss";
+@import "invoice-rtl.scss";

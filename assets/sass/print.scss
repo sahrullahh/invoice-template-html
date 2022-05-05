@@ -1,0 +1,15 @@
+@media print {
+  .table {
+    thead {
+      tr {
+        th {
+          -webkit-print-color-adjust: exact;
+          background-color: #eeeeee !important;
+        }
+      }
+    }
+  }
+  .copyright {
+    display: none;
+  }
+}

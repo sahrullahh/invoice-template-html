@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en, id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      A Simple Invoice Template Responsive and clean with HTML CSS SCSS
+    </title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/invoice.css" />
+  </head>
+  <body>
+    <section class="wrapper-invoice">
+      <!-- switch mode rtl by adding class rtl on invoice class -->
+      <div class="invoice">
+        <div class="invoice-information">
+          <p><b>Invoice #</b> : 12345</p>
+          <p><b>Created Date </b>: May, 07 2022</p>
+          <p><b>Due Date</b> : May, 09 2022</p>
+        </div>
+        <!-- logo brand invoice -->
+        <div class="invoice-logo-brand">
+          <!-- <h2>Tampsh.</h2> -->
+          <img src="./assets/image/tampsh.png" alt="" />
+        </div>
+        <!-- invoice head -->
+        <div class="invoice-head">
+          <div class="head client-info">
+            <p>Tampsh, Inc.</p>
+            <p>NPWP: 12.345.678.910.111213.1415</p>
+            <p>Bondowoso, Jawa timur</p>
+            <p>Jln. Rengganis 05, Bondowoso</p>
+          </div>
+          <div class="head client-data">
+            <p>-</p>
+            <p>Mohammad Sahrullah</p>
+            <p>Bondowoso, Jawa timur</p>
+            <p>Jln. Duko Kembang, Bondowoso</p>
+          </div>
+        </div>
+        <!-- invoice body-->
+        <div class="invoice-body">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Item Description</th>
+                <th>Amount</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Template Invoice</td>
+                <td>Rp.75.000</td>
+              </tr>
+              <tr>
+                <td>tax</td>
+                <td>Rp.5.000</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="flex-table">
+            <div class="flex-column"></div>
+            <div class="flex-column">
+              <table class="table-subtotal">
+                <tbody>
+                  <tr>
+                    <td>Subtotal</td>
+                    <td>Rp.80.000</td>
+                  </tr>
+                  <tr>
+                    <td>PPN 10%</td>
+                    <td>Rp.5.000</td>
+                  </tr>
+                  <tr>
+                    <td>Credit</td>
+                    <td>Rp.0</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <!-- invoice total  -->
+          <div class="invoice-total-amount">
+            <p>Total : Rp.80.000</p>
+          </div>
+        </div>
+        <!-- invoice footer -->
+        <div class="invoice-footer">
+          <p>Thankyou, happy shopping again</p>
+        </div>
+      </div>
+    </section>
+    <div class="copyright">
+      <p>Created by ❤ Mohammad Sahrullah</p>
+    </div>
+  </body>
+</html>
